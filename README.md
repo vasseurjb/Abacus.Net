@@ -1,1 +1,2 @@
 # Abacus.Net
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6e10938fd7db45ceae042c50ad98db10)](https://www.codacy.com/gh/vasseurjb/Abacus.Net/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=vasseurjb/Abacus.Net&amp;utm_campaign=Badge_Grade)
