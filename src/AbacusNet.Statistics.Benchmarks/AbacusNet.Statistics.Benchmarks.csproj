@@ -15,7 +15,7 @@
     <None Remove="BenchmarkDotNet.Annotations" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
-    <PackageReference Include="BenchmarkDotNet.Annotations" Version="0.13.1" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.2" />
+    <PackageReference Include="BenchmarkDotNet.Annotations" Version="0.13.2" />
   </ItemGroup>
 </Project>

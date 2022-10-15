@@ -1,21 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <OutputType>Exe</OutputType>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\AbacusNet\AbacusNet.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="BenchmarkDotNet" />
-    <None Remove="BenchmarkDotNet.Annotations" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
-    <PackageReference Include="BenchmarkDotNet.Annotations" Version="0.13.1" />
-  </ItemGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<OutputType>Exe</OutputType>
+		<Configurations>Release;Debug</Configurations>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugSymbols>true</DebugSymbols>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\AbacusNet\AbacusNet.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="BenchmarkDotNet" />
+		<None Remove="BenchmarkDotNet.Annotations" />
+		<None Remove="BasicsBenchmark\" />
+		<None Remove="DescriptiveStatisticsBenchmark\" />
+		<None Remove="MathNet.Numerics" />
+		<None Remove="alglib.net" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="BenchmarkDotNet" Version="0.13.2" />
+		<PackageReference Include="BenchmarkDotNet.Annotations" Version="0.13.2" />
+		<PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+		<PackageReference Include="alglib.net" Version="3.18.2" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="BasicsBenchmark\" />
+	  <Folder Include="DescriptiveStatisticsBenchmark\" />
+	</ItemGroup>
 </Project>
