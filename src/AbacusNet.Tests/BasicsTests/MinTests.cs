@@ -1,5 +1,4 @@
-﻿using System;
-namespace AbacusNet.Tests.BasicsTests
+﻿namespace AbacusNet.Tests.BasicsTests
 {
     public class MinTests : TestBase
     {

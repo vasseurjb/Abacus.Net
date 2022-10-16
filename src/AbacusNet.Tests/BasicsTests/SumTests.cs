@@ -10,6 +10,6 @@ public class SumTests : TestBase
         var actual = Basics.Sum(data);
         var expected = data.Sum();
 
-        Assert.Equal(expected, actual, 5);
+        Assert.Equal(expected, actual, precision);
     }
 }

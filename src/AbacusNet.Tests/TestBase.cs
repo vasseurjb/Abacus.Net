@@ -7,6 +7,7 @@ namespace AbacusNet.Tests
     {
         protected MersenneTwister random = new MersenneTwister(RandomSeed.Robust());
 
+        protected int precision = 5;
         protected int N = 1000;
         protected double[] data;
 

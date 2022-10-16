@@ -1,5 +1,4 @@
-﻿using System;
-using MathNet.Numerics.Statistics;
+﻿using MathNet.Numerics.Statistics;
 
 namespace AbacusNet.Tests.DescriptiveStatisticsTests
 {
@@ -11,7 +10,7 @@ namespace AbacusNet.Tests.DescriptiveStatisticsTests
             var actual = DescriptiveStatistics.Variance(data);
             var expected = Statistics.Variance(data);
 
-            Assert.Equal(expected, actual, 5);
+            Assert.Equal(expected, actual, precision);
         }
 
         [Fact]
@@ -20,7 +19,7 @@ namespace AbacusNet.Tests.DescriptiveStatisticsTests
             var actual = DescriptiveStatistics.Variance(data);
             var expected = alglib.samplevariance(data);
 
-            Assert.Equal(expected, actual, 5);
+            Assert.Equal(expected, actual, precision);
         }
     }
 }
